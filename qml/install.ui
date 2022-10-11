@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>JetBrains Mono</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>phyOS Welcome App</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>/usr/share/pixmaps/phyOS-logo.png</normaloff>/usr/share/pixmaps/phyOS-logo.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pb_internet">
+       <property name="maximumSize">
+        <size>
+         <width>730</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>INTERNET</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_pacman_keyring">
+       <property name="maximumSize">
+        <size>
+         <width>730</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>REFRESH PACMAN MIRRORS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_installer">
+       <property name="maximumSize">
+        <size>
+         <width>730</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>START THE INSTALLER (ONLINE) </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_installer_offline">
+       <property name="maximumSize">
+        <size>
+         <width>730</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>START THE INSTALLER (OFFLINE)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_quit">
+       <property name="text">
+        <string>QUIT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_welcome">
+       <property name="font">
+        <font>
+         <family>JetBrains Mono</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Welcome to phyOS!
+Offline installer installs base packages. If you need extra, try online installer. (Offline is lightweight)
+To connect the internet, open wifi menu from INTERNET button below, or click top right of the statusbar.
+After the connection, please refresh your pacman keyring from below.
+(Note: Hold Win button and left click to move window)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
